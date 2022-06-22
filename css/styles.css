@@ -251,11 +251,6 @@ body {
   display: block;
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
-
-  transition-property: text-decoration-line, text-decoration-color,
-    text-decoration-thickness;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .visually-hidden {
   position: absolute;
@@ -269,12 +264,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.benefits-title:hover,
-.benefits-title:focus {
-  text-decoration-line: underline;
-  text-decoration-color: var(--main-color);
-  text-decoration-thickness: 3px;
-}
 .benefits-text {
   font-size: 14px;
   line-height: 1.71;
@@ -284,17 +273,6 @@ body {
   outline: 1px solid transparent;
   display: block;
   flex-basis: calc(100% / 4 - 30px);
-
-  transition-property: text-decoration-line, text-decoration-color,
-    text-decoration-thickness;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.benefits-text:hover,
-.benefits-text:focus {
-  text-decoration-line: underline;
-  text-decoration-color: var(--main-color);
-  text-decoration-thickness: 3px;
 }
 .zero {
   margin-right: 0;
@@ -304,8 +282,6 @@ body {
 }
 .benefits-box {
   margin-bottom: 30px;
-}
-.benefits-link {
   display: flex;
   background: var(--main-team-color);
   border-radius: 4px;
@@ -765,7 +741,7 @@ img {
 .subscription-btn {
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   display: block;
@@ -777,25 +753,27 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: block;
 }
 .subscription-pic {
   color: rgba(255, 255, 255, 1);
   width: 24px;
   height: 24px;
-  display: flex;
 }
 .subscription-pic::before {
   content: "";
   display: flex;
   position: absolute;
+}
+.subscription-field {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*-----------PORTFOLIO------------------*/
@@ -984,4 +962,39 @@ img {
 }
 .join-svg-cross {
   color: rgba(0, 0, 0, 1);
+}
+.modal-field {
+  padding: 40px;
+}
+.modal-field-head {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  display: block;
+  margin-bottom: 30px;
+}
+.modal-field-name {
+  display: flex;
+  width: 100%;
+}
+.modal-field-phone {
+  display: flex;
+  width: 100%;
+}
+.modal-field-mail {
+  display: flex;
+  width: 100%;
+}
+.modal-field-comment {
+  display: flex;
+  width: 100%;
+}
+.modal-field-agreement {
+  display: flex;
+  width: 100%;
 }

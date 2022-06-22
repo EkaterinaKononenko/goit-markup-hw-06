@@ -407,8 +407,7 @@
         <div class="footer-container">
           <div class="footer-adress all-footer">
             <a href="" class="adress-logo link" lang="en"
-              >Web<span class="adress-logo-decor">Studio</span></a
-            >
+              >Web<span class="adress-logo-decor">Studio</span></a>
             <address>
               <ul class="adress-list link">
                 <li class="adress-details">
@@ -460,20 +459,20 @@
           </div>
           <div class="subscription">
             <lable for="footer-email" class="subscription-head"
-              >Подпишитесь на рассылку
-            </lable>
-            <input
-              class="subscription-email"
-              type="email"
-              placeholder="E-mail"
-              id="footer-email"
-            />
-            <button type="submit" class="subscription-btn">
-              <p class="subscription-text">Подписаться</p>
-              <svg class="subscription-pic" width="13" height="13">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+              >Подпишитесь на рассылку</lable>
+              <div class="subscription-field">
+                <input
+                class="subscription-email"
+                type="email"
+                placeholder="E-mail"
+                id="footer-email"/>
+                <button type="submit" class="subscription-btn">
+                <p class="subscription-text">Подписаться</p>
+                <svg class="subscription-pic" width="13" height="13">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </div>
+                </button>
           </div>
         </div>
       </div>
@@ -485,8 +484,23 @@
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
+         <form class="modal-field">
+          <p class="modal-field-head">Оставьте свои данные, мы вам перезвоним</p>
+        <label for="user-name" class="modal-field-name">Имя</label>
+        <input type="text" name="user-name" id="user-name"/>
+        <label for="tel" class="modal-field-phone">Телефон</label>
+        <input type="tel" name="tel" id="tel"/>
+        <label for="mail" class="modal-field-mail">Почта</label>
+        <input type="email" name="mail" id="mail"/>
+        <label for="comment" class="modal-field-comment">Комментарий</label>
+        <input type="text" name="comment" id="comment" row="8"></textarea>
+        <input type="checkbox" name="agreement" volue="agreement" id="agreement" />
+        <label for="agreement" class="modal-field-agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        <button type="submit" class="modal-btn-submit">Отправить</button>
+        </form>
       </div>
     </div>
+   
     <script src="./js/modal.js"></script>
   </body>
 </html>
