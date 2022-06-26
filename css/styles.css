@@ -1057,11 +1057,13 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 124px;
 }
 .checkbox {
-  display: flex;
+  display: block;
   align-items: center;
+  margin-top: 20px;
 }
 .modal-input-wrapper {
   position: relative;
@@ -1080,27 +1082,24 @@ img {
 .agreement-act {
   color: rgba(33, 150, 243, 1);
 }
-.privacy {
-  display: block;
-  padding-left: 77px;
-}
-.check-icon {
-  fill: transparent;
-}
+
 .privacy span {
   width: 20px;
   height: 20px;
   border: 1px solid rgba(34, 34, 34, 0.2);
   margin-right: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  left: 0;
 }
-.input-check:checked + .privacy span {
-  background-color: var(--accent-color);
+
+/*.check-icon {
+  fill: transparent;
+}*/
+
+.checkbox-square:checked + .privacy span {
+  background-color: #2196f3;
   border: none;
 }
 
-.input-check:checked + .privacy .check-icon {
+.checkbox-square:checked + .privacy .check-icon {
   fill: #ffffff;
 }
