@@ -755,6 +755,7 @@ img {
   border-radius: 4px;
   margin-left: 12px;
   align-items: center;
+  justify-content: space-betweeen;
 }
 .subscription-text {
   font-family: "Roboto", sans-serif;
@@ -768,15 +769,16 @@ img {
   color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 29px;
 }
 .subscription-pic {
   fill: rgba(255, 255, 255, 1);
   width: 24px;
   height: 24px;
-  position: absolute;
   display: flex;
+  margin-left: 10px;
 }
-.subscription-pic::before {
+.subscription-pic::after {
   content: "";
   display: flex;
   position: absolute;
