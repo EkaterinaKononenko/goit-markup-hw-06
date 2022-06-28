@@ -459,10 +459,10 @@
             </ul>
           </div>
           <div class="subscription">
-            <lable for="footer-email" class="subscription-head"
-              >Подпишитесь на рассылку</lable
+            <strong for="footer-email" class="subscription-head"
+              >Подпишитесь на рассылку</strong
             >
-            <div class="subscription-field">
+            <form class="subscription-field">
               <input
                 class="subscription-email"
                 name="subscription"
@@ -471,12 +471,12 @@
                 id="footer-email"
               />
               <button type="submit" class="subscription-btn">
-                <p class="subscription-text">Подписаться</p>
+                Подписаться
                 <svg class="subscription-pic" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -549,7 +549,6 @@
               class="modal-input checkbox-square visually-hidden"
               type="checkbox"
               name="agreement"
-              volue="agreement"
               id="agreement"
             />
             <label for="agreement" class="modal-field privacy"
