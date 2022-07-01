@@ -556,6 +556,7 @@ img {
   color: #2196f3;
 }
 /* ----------------FOOTER--------------*/
+
 .adress {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -570,9 +571,7 @@ img {
   outline: 1px solid transparent;
   width: 100%;
 }
-.container > .footer-join,
-.container > .footer-adress,
-.container > .subscription {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -580,7 +579,7 @@ img {
 }
 
 .footer-join {
-  margin-left: auto;
+  margin-left: 70px;
 }
 .adress-logo {
   font-family: "Raleway", sans-serif;
@@ -682,6 +681,9 @@ img {
   display: block;
   margin-bottom: 20px;
 }
+.join-list {
+  display: flex;
+}
 .join-item {
   width: 44px;
   height: 44px;
@@ -712,6 +714,7 @@ img {
   display: block;
   fill: #ffffff;
 }
+
 .subscription {
   margin-left: auto;
 }
@@ -804,7 +807,6 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
 /*-----------PORTFOLIO------------------*/
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -1169,10 +1171,13 @@ img {
 .checkbox-square:checked + .privacy .check-icon {
   fill: #ffffff;
 }
-.icon-check:checked + .privacy span {
+/*.icon-check:checked + .privacy span {
   background-color: #2196f3;
   border: none;
 }
 .icon-check:checked + .privacy .check-icon {
-  fill: #ffffff;
+  fill: #ffffff;}*/
+
+.checkbox-square:focus + .privacy span {
+  border-color: #2196f3;
 }
