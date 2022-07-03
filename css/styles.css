@@ -562,7 +562,6 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  height: 252px;
   letter-spacing: 0.03em;
   background: var(--header-text-color);
 
@@ -1107,7 +1106,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  margin-top: 30px;
   margin-left: 124px;
 
   transition-property: background, box-shadow;
@@ -1122,6 +1120,7 @@ img {
 .checkbox {
   display: block;
   align-items: center;
+  margin-bottom: 30px;
 }
 .modal-input-wrapper {
   position: relative;
